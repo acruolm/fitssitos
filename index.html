@@ -11,7 +11,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="icon" type="image/x-icon" href="pics/logofit.ico">
+		<link rel="icon" type="image/x-icon" href="pics/logo.ico">
 		<title>fitssitos💪</title>
 	</head>
 	<body>
@@ -39,9 +39,10 @@
 				</label>
 				<img class="logo" src="pics/logofit.png" alt="Logo de fitssitos">
 				<ul class="menu">
-				  <li>
+				<div class="menu__line"></div>
+				  <li class="menu__aboutme">
 				    <a href="#aboutme">
-				      Acerca de...
+				      Sobre mí
 				    </a>
 				  </li>
 				  <li>
@@ -49,11 +50,11 @@
 				      Menú
 				    </a>
 				  </li>
-				  <li>
+				  <!--<li>
 				    <a href="#contact">
 				      Contacto
-				    </a>
-				  </li>
+				    </a> 
+				  </li>!-->
 				</ul>
 			</nav>
 		</header>
@@ -163,18 +164,25 @@
 					</div>
 				</div>
 				<div class="line-footer"></div>
-				<ul class="footer__list">
+				<!--<ul class="footer__list">
 					<li>Recetas</li>
 					<li>Merch Oficial</li>
 					<li>Comparativa</li>
-				</ul>
+				</ul>!-->
 				<ul class="footer__copyright">
-					<li>©fitssitos.com.mx</li>
-					<li>2023 Todos los derechos reservados.</li>
-					<li>Hecho por @jacosmx</li>
-				</ul>
+					<li>2024 Todos los derechos reservados.</li>
+					<li>Hecho por <a href="https://www.instagram.com/jacosmx/">@jacosmx</a></li>
+				</ul>		
 			</div>
+				
 		</footer>
 	</body>
+	<script>
+		document.querySelectorAll('.menu a').forEach(link => {
+		  link.addEventListener('click', () => {
+			document.getElementById('check').checked = false;
+		  });
+		});
+	  </script>	  
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </html>
